@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>I Show Trade</title>
+        <link rel="icon" href="logo.jpg" type="image/x-icon"> <!-- Update the path if necessary -->
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+<body>
+    <div class="container">
+        <h1>I Show Trade</h1>
+        <div id="tradingControls">
+            <button id="startTradeButton">Start Trade</button>
+            <button id="stopTradeButton">Stop Trade</button>
+        </div>
+
+        <p>Please wait for 5 sec after starting the trade</p>
+        <div class="chart-container">
+            <canvas id="priceChart"></canvas>
+        </div>
+        <div id="summary" class="summary-container"></div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span id="popupMessage"></span>
+            <button id="closePopupButton">Close</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
